@@ -17,6 +17,7 @@ echo "Checking correct IP/ports are open..." | tee -a results/layer4_transport.t
 ss -tulnp >> results/layer4_transport.txt
 echo -e "----------------------------------------\n" >> results/layer4_transport.txt
 
+# Check TCP open on a remote host at google.com.
 echo "Running nc to test TCP connection to google.com:80..." | tee -a results/layer4_transport.txt
 nc -zv google.com 80 >> results/layer4_transport.txt 2>&1
 echo -e "----------------------------------------\n" >> results/layer4_transport.txt
