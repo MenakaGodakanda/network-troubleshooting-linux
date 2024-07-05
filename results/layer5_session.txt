@@ -1,0 +1,18 @@
+---Layer 5: Session Layer Troubleshooting---
+--------------------Start Session Layer Troubleshooting--------------------
+
+Checking established sessions...
+tcp        0      0 10.0.2.15:34328         34.107.243.93:443       ESTABLISHED
+tcp        0      0 10.0.2.15:41810         104.18.35.23:443        ESTABLISHED
+udp        0      0 10.0.2.15:38697         142.250.70.142:33522    ESTABLISHED
+udp        0      0 10.0.2.15:53149         142.250.70.142:33521    ESTABLISHED
+udp        0      0 10.0.2.15:68            10.0.2.2:67             ESTABLISHED
+udp        0      0 10.0.2.15:57700         192.168.122.1:80        ESTABLISHED
+udp        0      0 10.0.2.15:41322         142.250.70.142:33518    ESTABLISHED
+udp        0      0 10.0.2.15:33480         142.250.70.142:33519    ESTABLISHED
+udp        0      0 10.0.2.15:58332         142.250.70.142:33517    ESTABLISHED
+udp        0      0 10.0.2.15:60744         142.250.70.142:33520    ESTABLISHED
+udp        0      0 10.0.2.15:34304         142.250.70.142:33523    ESTABLISHED
+----------------------------------------
+
+--------------------End Session Layer Troubleshooting--------------------
