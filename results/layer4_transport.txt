@@ -1,0 +1,35 @@
+---Layer 4: Transport Layer Troubleshooting---
+--------------------Start Transport Layer Troubleshooting--------------------
+
+Checking open ports and listening services...
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      10307/cupsd         
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      454/systemd-resolve 
+tcp6       0      0 ::1:631                 :::*                    LISTEN      10307/cupsd         
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           454/systemd-resolve 
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           10319/cups-browsed  
+udp        0      0 0.0.0.0:47798           0.0.0.0:*                           589/avahi-daemon: r 
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           589/avahi-daemon: r 
+udp6       0      0 :::41912                :::*                                589/avahi-daemon: r 
+udp6       0      0 :::5353                 :::*                                589/avahi-daemon: r 
+----------------------------------------
+
+Checking correct IP/ports are open...
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                   
+udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=454,fd=13))
+udp   UNCONN 0      0            0.0.0.0:631        0.0.0.0:*    users:(("cups-browsed",pid=10319,fd=7))  
+udp   UNCONN 0      0            0.0.0.0:47798      0.0.0.0:*    users:(("avahi-daemon",pid=589,fd=14))   
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*    users:(("avahi-daemon",pid=589,fd=12))   
+udp   UNCONN 0      0               [::]:41912         [::]:*    users:(("avahi-daemon",pid=589,fd=15))   
+udp   UNCONN 0      0               [::]:5353          [::]:*    users:(("avahi-daemon",pid=589,fd=13))   
+tcp   LISTEN 0      128        127.0.0.1:631        0.0.0.0:*    users:(("cupsd",pid=10307,fd=7))         
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*    users:(("systemd-resolve",pid=454,fd=14))
+tcp   LISTEN 0      128            [::1]:631           [::]:*    users:(("cupsd",pid=10307,fd=6))         
+----------------------------------------
+
+Running nc to test TCP connection to google.com:80...
+Connection to google.com (142.250.70.238) 80 port [tcp/http] succeeded!
+----------------------------------------
+
+--------------------End Transport Layer Troubleshooting--------------------
