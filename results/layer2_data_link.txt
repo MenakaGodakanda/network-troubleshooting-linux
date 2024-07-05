@@ -1,0 +1,29 @@
+---Layer 2: Data Link Layer Troubleshooting---
+----------------------------------------
+
+Checking MAC address and errors...
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::84f7:12e7:68b7:c956  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:fd:75:5a  txqueuelen 1000  (Ethernet)
+        RX packets 755170  bytes 966112452 (966.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 357392  bytes 46014630 (46.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 14317  bytes 1650046 (1.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 14317  bytes 1650046 (1.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+----------------------------------------
+
+Checking the default gateway...
+10.0.2.2 dev enp0s3 lladdr 52:54:00:12:35:02 REACHABLE
+----------------------------------------
+
+--------------------End Data Link Layer Troubleshooting--------------------
