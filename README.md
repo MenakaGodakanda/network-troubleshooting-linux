@@ -76,45 +76,53 @@ Run the `layer1_physical.sh` script:
 ```bash
 sudo ./scripts/layer1_physical.sh
 ```
+![Screenshot 2024-07-05 151447](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/da369700-7655-49b2-9c51-bfdabe261fb7)
 
 #### Layer 2: Data Link Layer
 Run the `layer2_data_link.sh` script:
 ```bash
 sudo ./scripts/layer2_data_link.sh
 ```
+![Screenshot 2024-07-05 151527](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/42c93173-c507-4aee-a6db-b36db6200bc8)
 
 ### Layer 3: Network Layer
 Run the `layer3_network.sh` script:
 ```bash
 sudo ./scripts/layer3_network.sh
 ```
+![Screenshot 2024-07-05 151621](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/e598705f-e315-428a-aae2-6ce69f0e2022)
 
 ### Layer 4: Transport Layer
 Run the `layer4_transport.sh` script:
 ```bash
 sudo ./scripts/layer4_transport.sh
 ```
+![Screenshot 2024-07-05 151632](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/bd14adf2-3b67-4371-8c59-7d164b118df9)
 
 #### Layer 5: Session Layer
 Run the `layer5_session.sh` script:
 ```bash
 sudo ./scripts/layer5_session.sh
 ```
+![Screenshot 2024-07-05 151655](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/81e97cea-b2de-4248-9313-72a6ac35ea70)
 
 ### Layer 6: Presentation Layer
 Run the `layer6_presentation.sh` script:
 ```bash
 sudo ./scripts/layer6_presentation.sh
 ```
+![Screenshot 2024-07-05 151718](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/b89e1762-490d-4b75-a558-4918d091e085)
 
 ### Layer 7: Application Layer
 Run the `layer7_application.sh` script:
 ```bash
 sudo ./scripts/layer7_application.sh
 ```
+![Screenshot 2024-07-05 151741](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/3492afca-8c2f-4065-a163-00c0bad3949b)
 
 ## Check the Results
-Check the results in the results directory.
+Check the results in the `results` directory. Each script has generated report as below: <br><br>
+![Screenshot 2024-07-05 151356](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/2ed84223-9870-492b-8957-43e6db313870)
 
 ## Project Structure
 ```
