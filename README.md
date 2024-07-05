@@ -9,37 +9,56 @@ This project demonstrates network troubleshooting techniques on Linux based on t
 ### Explanation:
 #### Layer 1: Physical
 - The Physical Layer is responsible for the physical connection between devices. It deals with the transmission and reception of raw bitstreams over a physical medium
-- `layer1_physical.sh`: Checks the network interface status.
+- `layer1_physical.sh`:
+    - Checks the network interface status.
+    - Check physical link.
+    - Examine packet count statistics.
+    - Check link properties.
 - Output of `layer1_physical.sh` script is saved in the results directory as `layer1_physical.txt`.
 
 #### Layer 2: Data Link
 - The Data Link Layer handles error detection and correction from the Physical Layer. It provides node-to-node data transfer and manages access to the physical medium.
-- `layer2_data_link.sh`: Checks MAC address and errors.
+- `layer2_data_link.sh`:
+    - Checks MAC address and errors.
+    - Check the default gateway.
 - Output of `layer2_data_link.sh` script is saved in the results directory as `layer2_data_link.txt`.
 
 #### Layer 3: Network
 - The Network Layer is responsible for logical addressing, routing, and forwarding packets. It determines the best path for data to travel across a network.
-- `layer3_network.sh`: Checks IP configuration, routing, and runs a traceroute.
+- `layer3_network.sh`:
+    - Check IP configuration and route.
+    - Check valid IP address.
+    - Check routes and default gateway.
+    - Check routing path to `google.com`.
+    - Check `google.com` is reachable.
+    - Check default dns server.
+    - Check any IP address conflict.
 - Output of `layer3_network.sh` script is saved in the results directory as `layer3_network.txt`.
 
 #### Layer 4: Transport
 - The Transport Layer ensures complete data transfer and error recovery. It provides reliable data transfer services to the upper layers.
-- `layer4_transport.sh`: Checks open ports and services, and tests TCP connections.
+- `layer4_transport.sh`:
+    - Check open ports and listening services.
+    - Check correct IP/ports are open.
+    - Check TCP open on a remote host at `google.com`.
 - Output of `layer4_transport.sh` script is saved in the results directory as `layer4_transport.txt`.
 
 #### Layer 5: Session
 - The Session Layer manages and controls the connections between computers. It establishes, maintains, and terminates connections between applications.
-- `layer5_session.sh`: Checks established sessions.
+- `layer5_session.sh`:
+    - Checks established sessions.
 - Output of `layer5_session.sh` script is saved in the results directory as `layer5_session.txt`.
 
 #### Layer 6: Presentation
 - The Presentation Layer translates data between the application layer and the network. It handles data encryption, compression, and translation.
-- `layer6_presentation.sh`: Checks encoding and encryption (example with SSL certificates).
+- `layer6_presentation.sh`:
+    - Checks encoding and encryption (example with SSL certificates).
 - Output of `layer6_presentation.sh` script is saved in the results directory as `layer6_presentation.txt`.
 
 #### Layer 7: Application
 - The Application Layer is the closest layer to the end-user. It provides network services directly to applications (e.g., web browsers, email clients).
-- `layer7_application.sh`: Checks HTTP service availability.
+- `layer7_application.sh`:
+    - Checks HTTP service availability.
 - Output of `layer7_application.sh` script is saved in the results directory as `layer7_application.txt`.
 
 ## Setting Up the Project
