@@ -1,0 +1,54 @@
+---Layer 1: Physical Layer Troubleshooting---
+----------------------------------------
+
+Checking network interface status...
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:fd:75:5a brd ff:ff:ff:ff:ff:ff
+----------------------------------------
+
+Checking the physical link...
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+enp0s3           UP             08:00:27:fd:75:5a <BROADCAST,MULTICAST,UP,LOWER_UP> 
+----------------------------------------
+
+Examining packet count statistics...
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:fd:75:5a brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+     966111824  755166      0       0       0       0 
+    TX:  bytes packets errors dropped carrier collsns           
+      46013384  357388      0       0       0       0 
+----------------------------------------
+
+Checking link properties are valid...
+Settings for enp0s3:
+	Supported ports: [ TP ]
+	Supported link modes:   10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	Supported pause frame use: No
+	Supports auto-negotiation: Yes
+	Supported FEC modes: Not reported
+	Advertised link modes:  10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	Advertised pause frame use: No
+	Advertised auto-negotiation: Yes
+	Advertised FEC modes: Not reported
+	Speed: 1000Mb/s
+	Duplex: Full
+	Auto-negotiation: on
+	Port: Twisted Pair
+	PHYAD: 0
+	Transceiver: internal
+	MDI-X: off (auto)
+	Supports Wake-on: umbg
+	Wake-on: d
+        Current message level: 0x00000007 (7)
+                               drv probe link
+	Link detected: yes
+----------------------------------------
+
+--------------------End Physical Layer Troubleshooting--------------------
