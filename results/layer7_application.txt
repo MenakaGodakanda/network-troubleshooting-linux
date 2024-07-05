@@ -1,0 +1,19 @@
+---Layer 7: Application Layer Troubleshooting---
+--------------------Start Application Layer Troubleshooting--------------------
+
+Checking HTTP service for google.com...
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-ShxOBNjOMCSctMXUD7_s4g' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Date: Fri, 05 Jul 2024 07:17:30 GMT
+Expires: Sun, 04 Aug 2024 07:17:30 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
+----------------------------------------
+
+--------------------End Application Layer Troubleshooting--------------------
