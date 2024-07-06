@@ -63,13 +63,13 @@ This project demonstrates network troubleshooting techniques on Linux based on t
 
 ## Setting Up the Project
 
-1. Clone the repository:
+### 1. Clone the repository:
 ```bash
 git clone https://github.com/MenakaGodakanda/network-troubleshooting-linux.git
 cd network-troubleshooting-linux
 ```
 
-2. Install Tools:
+### 2. Install Tools:
 - **ip**: The `ip` command is part of the `iproute2` package, which is typically installed by default on most Linux distributions. If not already installed, you can install it using:
     ```bash
     sudo apt-get install iproute2
@@ -115,7 +115,7 @@ cd network-troubleshooting-linux
     sudo apt-get install curl
     ```
 
-3. Make the scripts executable:
+### 3. Make the scripts executable:
 ```bash
 chmod +x scripts/*.sh
 ```
