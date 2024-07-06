@@ -70,18 +70,50 @@ cd network-troubleshooting-linux
 ```
 
 2. Install Tools:
-- **ping**: `ping` is a network utility used to test the reachability of a host on an IP network. It also measures the round-trip time for messages sent from the originating host to a destination computer.
-- **traceroute**: `traceroute` is a network diagnostic tool used to track the pathway packets take from one IP address to another. It helps in identifying the route and measuring transit delays of packets.
-- **tcpdump**: `tcpdump` is a packet analyzer tool that captures and displays the traffic passing through a network interface. It provides detailed insights into the packets being transmitted and received.
-- **netstat**: `netstat` is a network statistics utility that displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
-- **nc (netcat)**: `nc`, or netcat, is a versatile networking tool used for reading from and writing to network connections using TCP or UDP. It can be used for port scanning, transferring files, and testing network connectivity.
-- **curl**: `curl` is a command-line tool used for transferring data with URLs. It supports various protocols including HTTP, HTTPS, FTP, and more. It's often used for testing and interacting with web services.
-- **arp-scan**: `arp-scan` is a network scanning tool used to discover all the devices connected to a network. It sends ARP requests to all possible IP addresses on the local network and listens for responses.
-
-```bash
-ping, traceroute, tcpdump, netstat, nc, curl
-sudo apt install arp-scan
-```
+- **ip**: The `ip` command is part of the `iproute2` package, which is typically installed by default on most Linux distributions. If not already installed, you can install it using:
+    ```bash
+    sudo apt-get install iproute2
+    ```
+- **ifconfig**: The `ifconfig` command is part of the `net-tools` package. It shows detailed information about all or specific network interfaces, including IP addresses, MAC addresses, netmask, broadcast address, and interface status (up or down).
+    ```bash
+    sudo apt-get install net-tools
+    ```
+- **ethtool**: `ethtool` is a utility for querying and changing network interface driver and hardware settings.
+    ```bash
+    sudo apt-get install ethtool
+    ```
+- **traceroute**: `traceroute` tracks the route packets take to a network host.
+    ```bash
+    sudo apt-get install traceroute
+    ```
+- **ping**: `ping` is used to check the reachability of a host on an IP network. `ping` is part of the `iputils-ping` package, which is typically installed by default.
+    ```bash
+    sudo apt-get install iputils-ping
+    ```
+- **dig**: `dig` is a DNS lookup utility. `dig` is part of the `dnsutils` package.
+    ```bash
+    sudo apt-get install dnsutils
+    ```
+- **arp-scan**: `arp-scan` is a utility for scanning the local network for devices.
+    ```bash
+    sudo apt-get install arp-scan
+    ```
+- **netstat**: `netstat` displays network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. It is part of the `net-tools` package.
+    ```bash
+    sudo apt-get install net-tools
+    ```
+- **ss**: `ss` is a utility to investigate sockets. `ss` is part of the `iproute2` package, which is typically installed by default.
+    ```bash
+    sudo apt-get install iproute2
+    ```
+- **nc (netcat)**: `nc`, or netcat, is a versatile networking tool used for reading from and writing to network connections using TCP or UDP.
+    ```bash
+    sudo apt-get install netcat
+    ```
+- **curl**: `curl` is a command-line tool for transferring data with URLs.
+    ```bash
+    sudo apt-get install curl
+    ```
 
 3. Make the scripts executable:
 ```bash
