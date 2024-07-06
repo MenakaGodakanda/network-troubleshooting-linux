@@ -141,7 +141,7 @@ sudo ./scripts/layer7_application.sh
 
 ## Check the Results
 Check the results in the `results` directory. Each script has generated report as below: <br><br>
-![Screenshot 2024-07-05 151356](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/2ed84223-9870-492b-8957-43e6db313870)
+![Screenshot 2024-07-07 031528](https://github.com/MenakaGodakanda/network-troubleshooting-linux/assets/156875412/197cfb88-293e-41e4-82d3-386998076d03)
 
 ## Project Structure
 ```
