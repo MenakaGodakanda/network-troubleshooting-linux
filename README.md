@@ -1,6 +1,7 @@
 # Network Troubleshooting on Linux (OSI Layers)
 
-This project demonstrates network troubleshooting techniques on Linux based on the OSI model. Each OSI layer is addressed with specific tools and commands to diagnose and resolve network issues.
+This project demonstrates network troubleshooting techniques on Linux based on the OSI model. Each OSI layer is addressed with specific tools and commands to diagnose and resolve network issues.<br>
+<a href="https://github.com/MenakaGodakanda/network-troubleshooting-linux/blob/main/Project_Description.md">Project Description</a>
 
 ## Overview
 
@@ -121,6 +122,15 @@ chmod +x scripts/*.sh
 ```
 
 ## Run the Desired script:
+
+### Identify Network Interface
+
+The scriptings of this project used `enp0s3` as the network interface. Identify the network interface of your computer (such as `eth0` and `lo`) by simply running `ifconfig` and replacing the required network interface in the scripts. For examples:
+```
+ip -s link show <network-interface> >> results/layer1_physical.txt
+ethtool <network-interface> >> results/layer1_physical.txt
+arp-scan -I <network-interface> -l >> results/layer3_network.txt
+```
 
 ### Layer 1: Physical Layer
 Run the `layer1_physical.sh` script:
